@@ -106,11 +106,11 @@ export default function Home() {
             Ask
           </Button>
         </Box>
-        <Stack sx={{ marginTop: "200px" }}>
+        <Stack spacing={2} sx={{ marginTop: "200px" }}>
           {messages.map((message, index) => {
             return (
               (message.role === "user" || message.role === "assistant") && (
-                <Typography variant="body1" key={index}>
+                <Typography variant="body1" key={index} whiteSpace="pre-wrap">
                   {typeof message.content === "string"
                     ? message.content
                     : message.content &&
