@@ -1,8 +1,8 @@
 import "dotenv/config";
 import OpenAI from "openai";
-import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import { getStat } from "./iot-api";
 
+import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import products from "../products.json";
 
 const openai = new OpenAI();
@@ -13,6 +13,8 @@ const getCount = async (
   endTime: string,
   dimension: "Minute" | "Hour" | "Day" | "Week" | "Quarter" | "Month" | "Year"
 ) => {
+  console.log(attributeId, startTime, endTime, dimension);
+
   const data = await getStat({
     orderNumber: process.env.IOT_ORDER_NUMBER || "",
     productId: "J3ukJZfI6gRCriN0tkARlQcE2QhKMrGm",
