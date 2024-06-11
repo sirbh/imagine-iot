@@ -13,6 +13,7 @@ import {
 import { ChatCompletionMessageParam } from "openai/src/resources/index.js";
 import { useState } from "react";
 import { completeConversation } from "./actions";
+import { FiberManualRecord, FiberManualRecordRounded } from "@mui/icons-material";
 
 export default function Home() {
   // useEffect(() => {
@@ -110,7 +111,10 @@ export default function Home() {
           {messages.map((message, index) => {
             return (
               (message.role === "user" || message.role === "assistant") && (
-                <Typography variant="body1" key={index} whiteSpace="pre-wrap">
+                <>
+                <Box sx={{display:"flex", justifyContent:"start", padding:"0px 20px 0px 20px"}}>
+                {typeof message.content === "string" && <FiberManualRecordRounded color={message.role==="user"?"primary":"secondary"} sx={{display:"inline-block"}}/>}
+                <Typography variant="body1" sx={{display:"inline-block"}} key={index} whiteSpace="pre-wrap">
                   {typeof message.content === "string"
                     ? message.content
                     : message.content &&
@@ -118,6 +122,9 @@ export default function Home() {
                         .map((m) => (m.type === "text" ? m.text : m.image_url))
                         .join("")}
                 </Typography>
+
+                </Box>
+                </>
               )
             );
           })}
