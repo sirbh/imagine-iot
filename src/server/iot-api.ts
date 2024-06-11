@@ -83,6 +83,10 @@ export const getStat = async (params: StatParams) => {
       urlParams.toString()
   );
 
+  if (res.status !== 200) {
+    throw new Error(await res.json());
+  }
+
   return (await res.json()) as StatData[];
 };
 
@@ -127,6 +131,10 @@ export const getRange = async (params: RangeParams) => {
     "https://iot.tampere.fi/externaldataapi/v1/meas/range?" +
       urlParams.toString()
   );
+
+  if (res.status !== 200) {
+    throw new Error(await res.json());
+  }
 
   return (await res.json()) as RangeData[];
 };

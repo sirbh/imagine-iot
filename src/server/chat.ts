@@ -6,6 +6,8 @@ import { getStat } from "./iot-api";
 const openai = new OpenAI();
 
 const getHourlyCarCount = async (startTime: string, endTime: string) => {
+  console.log(startTime, endTime);
+
   const data = await getStat({
     orderNumber: process.env.IOT_ORDER_NUMBER || "",
     productId: "J3ukJZfI6gRCriN0tkARlQcE2QhKMrGm",

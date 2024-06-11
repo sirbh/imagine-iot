@@ -4,6 +4,7 @@ import {
   AppBar,
   Box,
   Button,
+  Stack,
   TextField,
   Toolbar,
   Typography,
@@ -29,18 +30,29 @@ export default function Home() {
     // }
     // );
 
-    completeConversation([
-      { role: "system", content: "Ask me about your city" },
+    const newMessages: ChatCompletionMessageParam[] = [
+      ...messages,
       { role: "user", content: input },
-    ]).then((response) => {
-      console.log(response.pop()?.content);
-      setMessages((old) => [...old, ...response]);
+    ];
+
+    setInput("");
+    setMessages(newMessages);
+
+    completeConversation(newMessages).then((response) => {
+      setMessages([...newMessages, ...response]);
     });
   };
 
-  const [messages, setMessages] = useState([] as ChatCompletionMessageParam[]);
+  const [messages, setMessages] = useState([
+    {
+      role: "system",
+      content: `Ask me about your city. Time is ${new Date().toISOString()}`,
+    },
+  ] as ChatCompletionMessageParam[]);
 
   const [input, setInput] = useState("");
+
+  console.log(messages);
 
   return (
     <>
@@ -89,18 +101,22 @@ export default function Home() {
             Ask
           </Button>
         </Box>
-        <Typography variant="body1" sx={{ marginTop: "200px" }}>
-          {messages.toLocaleString()}
-        </Typography>
-        {messages.map((message, index) => {
-          return (
-            typeof message.content === "string" && (
-              <Typography variant="body1" key={index}>
-                {message.content}
-              </Typography>
-            )
-          );
-        })}
+        <Stack sx={{ marginTop: "200px" }}>
+          {messages.map((message, index) => {
+            return (
+              (message.role === "user" || message.role === "assistant") && (
+                <Typography variant="body1" key={index}>
+                  {typeof message.content === "string"
+                    ? message.content
+                    : message.content &&
+                      message.content
+                        .map((m) => (m.type === "text" ? m.text : m.image_url))
+                        .join("")}
+                </Typography>
+              )
+            );
+          })}
+        </Stack>
       </Box>
     </>
   );
