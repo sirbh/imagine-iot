@@ -106,10 +106,10 @@ export default function Home() {
           {messages.map((message, index) => {
             return (
               (message.role === "user" || message.role === "assistant") && (
-                <>
-                <Box sx={{display:"flex", justifyContent:"start", padding:"0px 20px 0px 20px"}}>
+              
+                <Box  key={index} sx={{display:"flex", justifyContent:"start", padding:"0px 20px 0px 20px"}}>
                 {typeof message.content === "string" && <FiberManualRecordRounded color={message.role==="user"?"primary":"secondary"} sx={{display:"inline-block"}}/>}
-                <Typography variant="body1" sx={{display:"inline-block"}} key={index} whiteSpace="pre-wrap">
+                <Typography variant="body1" sx={{display:"inline-block"}} whiteSpace="pre-wrap">
                   {typeof message.content === "string"
                     ? message.content
                     : message.content &&
@@ -119,7 +119,7 @@ export default function Home() {
                 </Typography>
 
                 </Box>
-                </>
+        
               )
             );
           })}
