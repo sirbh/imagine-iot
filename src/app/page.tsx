@@ -4,6 +4,7 @@ import {
   AppBar,
   Box,
   Button,
+  LinearProgress,
   Stack,
   TextField,
   Toolbar,
@@ -37,8 +38,9 @@ export default function Home() {
 
     setInput("");
     setMessages(newMessages);
-
+    setLoading(true);
     completeConversation(newMessages).then((response) => {
+      setLoading(false);
       setMessages([...newMessages, ...response]);
     });
   };
@@ -52,6 +54,8 @@ export default function Home() {
 
   const [input, setInput] = useState("");
 
+  const [loading, setLoading] = useState(false);
+
   console.log(messages);
 
   return (
@@ -63,6 +67,7 @@ export default function Home() {
           </Typography>
         </Toolbar>
       </AppBar>
+      {loading && <LinearProgress />}
       <Box
         sx={{
           width: "100%",
