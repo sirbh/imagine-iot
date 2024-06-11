@@ -45,12 +45,7 @@ export default function Home() {
     });
   };
 
-  const [messages, setMessages] = useState([
-    {
-      role: "system",
-      content: `Ask me about your city. Time is ${new Date().toISOString()}`,
-    },
-  ] as ChatCompletionMessageParam[]);
+  const [messages, setMessages] = useState([] as ChatCompletionMessageParam[]);
 
   const [input, setInput] = useState("");
 

@@ -1,0 +1,450 @@
+[
+  {
+    "productId": "J3ukJZfI6gRCriN0tkARlQcE2QhKMrGm",
+    "name": "Insinöörinkatu/Hervantakeskus liikennedata",
+    "description": "Datapaketti sisältää kulkumuodoittain liikennemääriä nimen mukaiselta alueelta. Liikennemäärät on laskettu eritellyiltä väyliltä kohdealueella (jalankulkuväylä, ajorata, pyöräliikenne, suojatie). Väyliltä lasketut kulkumuodot ovat: jalankulkija, pyöräilijä, sähköpotkulauta, henkilöauto, moottoripyörä, linja-auto, kuorma-auto ja ratikka. Suojatie kohteissa dataa on vain jalankulkijoista, pyöräilijöistä ja sähköpotkulaudoista.\n\nVäylien sijainnin voi tarkistaa 'latitude' ja 'longitude' asset attribuuteista. Attribuuteissa on 2 koordinaattipistettä, jotka muodostavat nuolen (vanhemmasta uudenpaan). Nuoli näyttää, missä laskettu väylä sijaitsee ja mihin suuntaan kulkevaa liikennettä siinä lasketaan.\n\nAtribuuteissa on mukana myös 'measurement_offline' tieto, joka kertoo, jos mittapiste on ollut poissa käytöstä. Katkojen ajalta mittapisteisiin generoidaan täytedataa, mutta pitkissä katkoissa data on nollaa.\n\nLiikennedata on tuotettu kamera-analytiikalla. Uutta dataa saapuu kaikkiin mittapisteisiin noin kerran minuutissa. Datassa voi olla huoltokatkoista ja muista syistä aiheutuneita aukkoja.\n\nDataa tuotettu joulukuusta 2022 lähtien.\n\nEsimerkki:\nPäätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Hämeensilta ➞ Kohde: Hämeensilta etelä - Jalankulkuväylä ➞ Hämeensilta etelä - Jalankulkuväylä länteen ➞ pedestrian_count ➞ pedestrian_count\n\nAttribuutti kuvaa Hämeensillan eteläisellä jalankulkuväylällä länteen päin kulkeneiden jalankulkijoiden määrää.",
+    "publisher": "KAUPSU, Kaupunkiympäristön suunnittelu",
+    "attributes": [
+      {
+        "id": "Qp5mAT4W7xbg_pxIoZjzzZxEkKzNiQXK",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "8FM6TrnXFkPs9TPn5dqL3ouR6vjEIT2Z",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "Rx0qDSOYcUv0nAs1sgbSaP458mEvJRnT",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "-I0wHpSV-0PYTSu6GDyaFngrt7Pqqke7",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "jO8IBDaLgNnNRF75pF4DEVXoLlksbGqE",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "EHua8ilJdVUi9vcV-JJv1PZYios3lDEG",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "emOF56vgYbqLrTzpXjLg8eYKfWpT4mLS",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "aH-ywmMmNwAol_LyI_oS_EgtFnAIiMp5",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "OwptcwLUbZCp6_4XtBWP91Vy35kdD8VV",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "PztkHpF4-79hZq2EuH9D8HkaMpFf_wbC",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "J1k7SpR2ryGQF76AlZNEn1DT50Vs8-pl",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata etelään ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "tQ--DCAqG_VVEcEXW5tarFTmst7Hn90e",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "h5vodftCOSg53czfx39_63YgN3Swplts",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "JKo17pRcU1Swu5waZFLb7oQVKNmmLync",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "Q-Fno8xFk_phxY2168rVzNegtgn18h4F",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "AuKbGunAf4wfShBuHW99WYQKk_p8cQEU",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "AG1mBP2zESPtD5bjtR8fVJqty6_fo21W",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "yOzNj6QXQExNpUF48Tsp2FKUhZ0SBpNN",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "2rQlU64gOVgZdqrOagrsH8qjMGwaxHNA",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "_o0HBylHUIC3j44TepONRcT9smW-_jNn",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "VFp5ax0Ea3iFrbgHs3lQAosHECtWRo4Z",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "HGgbBcWPbNRE_CLVlgAEn9rd2gnxDk-E",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu - Ajorata ➞ Insinöörinkatu - Ajorata pohjoiseen ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "TeoCC--hy_pWIOCNlvkU-IF7GDSsq9fO",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "GoB3L9JRvtyhVMBu6j-uDrppsr9R2VXj",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "xf4ZG4mGd0dXAu2y5-mVbeDNQMxvhcj8",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "n3722uB8XWqnobqbTCg_RM5GrmLRWLkY",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "fP3PiTlJFn1RisoWxFt6AgwSh9e6ObbO",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "pKtmBUUi1SmElzpNQSOtEbByQXx2nx65",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "XENULqNXst4AxiDYuzwHwGzfUv9ko_xc",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "oVQEvi6gy4-_hwGe886cK5_iOzeqmbUc",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "22fVY_3_KtRIraEQ1RR5dKXrEpc88URO",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "6DhVQyMw2BXs0uzkS8A9xidx4oEiN0Ay",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "4W-6ucUzy2yChjBrNZTIjKse68-nZIVx",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - etelään ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "TNMj884j0nR0fk0awqhLgF89ynllCrWo",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "EdsX5-CQbY5SNwPqmQCXuH1Ll-uktvDv",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "BgfBkU-NpLgcI4sSyF2XjgYoKbzftFYP",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "GxjrWNU4sCESlMkPqQFXXREI2NfXiNOb",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "rukNVu-MyV-ifYA_QVoNsX183gOPlso2",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "XSgx2SkyxOEPMVPKqkgouuNNrVU_T4cq",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "mboXS86OI_imgra6TP_GFv8USZR9akHC",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "4oxxHSkH--ilKDYRfmGDbKPxkX0ImYsX",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "f89TxgqM7JPHAgmnM7iD3LvADbMOpJr5",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "Ayxv4jdgJ6TBo2DS7wmn0AZS26U2WrCu",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "67xZdY9W89Ai-csMMUPSFl6BvIM6MKZ6",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä etelään ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "57ovjlPqwZYYSjK5QktJx0V4Ga70_0VN",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "Jnk6kiL2SOkWP6v0F_P5KWfKG2ZGP1-n",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "yjB-kKJggT0WRUc7tIgCm1eP3ijhzvOo",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "NmoAx33T19lwkIRsIw9VmS1oPQ3N0hO6",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "BPiIch22RruLRs6uqXFaJh-tjQFPhTA4",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "q7FG1ldr4WzSmNmz0hOFJ1yERPb4E5NY",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "-obzXUHY3wcQezdutfmfK7euTAw9iEQ5",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "kB5DwqMmmhSg2uu01yBSx9ly_lirvloL",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "1bywEQ67Nj6LuKSo4hzZGV3oWa1cIsaI",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "kETEc0hQ8DYfGK3YPB5Yzi8vUUFqwVgZ",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "tDHbp_V6Pkc5ttXTuVe9QkcLWX0Rw3eU",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Jalankulkuväylä ➞ Insinöörinkatu itä - Jalankulkuväylä pohjoiseen ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "exvZ9FpupB7fQMd_9VBlXS2w-rRu6qSd",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "ahfPk9zC3GDLR44M_czo-FOlpAkmFN0D",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "YhjVVHKtPKxIWoan8T8zw4Ux0YqGGsKg",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "08LTyng0WQ82qlubiQmzsNcXISim8CYb",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "HhnC-mIkaq52Zk2Dv5Q6MDmXXcSTxFSP",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "pyd8iyyJKyJtoMfhGvmHcfXnAvFjM0qX",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "EFGYOIx4St3xKDNUP4D1oT-u9IEfInZJ",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "gqfiIkRO8Bg6wb1b5sQQEXvie7dK8T3P",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "bNAScQxcUnZZ-DyCp1a-cbfJfbJblZvE",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "5dEzrnKjkTQPgbD2b9nE3Bu_7ROdm8uI",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "iltsSoi8yZJhcwjYmxPVqFAOFyYNHZEf",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu itä - Pyöräliikenne ➞ Insinöörinkatu itä - Pyöräliikenne pohjoiseen ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "9AQ2nXV-dcAULln64qM4dWpDO4IO-VrI",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "gX8R-Hqxk5-gr_1skLXPkMb4yGkMC6og",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "-O6OtC30qs0xXwCEXFkh49BvDezwaXeE",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "cb5uTzK8nQ9X_u5_ZH4bbLj2wVdZ7kZc",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "nT1KeC3FcWSaRUgcDgAkR4wLPJWjKb5K",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "hZvcfpD-Ltq0nOhoe-oTnNER3Ry_tOe3",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "DE_OfH6IP85TK0k6ri2t2ORUJsaXrUV9",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "RnDoLg5W8xE9ZixmnDWRCNVD5QHk9dIz",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "oWHwCsiR68eC0YdGRiA1giJzl1fRdIKp",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "d4Ux88unEzfbOeA0d377iJHAy-uFTKH8",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "UEG7ypTcpoLPtTYoO7yXT9SMuJuxPHvj",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä etelään ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "-bBWMkGhjHCYPaKOOkfnHuewcL4vUbGt",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "Ht3hoAsQV_OZpUZKhgfV3Dh_j2NgOnCV",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "xvUVxIA5jTflscXHGUEI-wLIztcH6ge-",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "vKcbrJUnUmtbzeBosf4r-l26dlz8I7Wf",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "5HjOwuHB5qfA82aGLUoDZE3WJYtCD-p6",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "uGKySIylKkLEXnVr6Le8Ilg9yhLef-88",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "-e9MFLfvJfQXkmMjPh8hSMKdw8_vimH9",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "sdEHLlemrWOmhk7wedOUSkxUWhKOdbvO",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "eh8lL6hoZ2lB9cihn2HdWDpgRbGoAoOO",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "NQ7TEInEjZQA42NJ71XSXaBTsv_mkjn1",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "3Cev7KJUvzQ7BuJEu6953WXohpZBRiIQ",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Jalankulkuväylä ➞ Insinöörinkatu länsi - Jalankulkuväylä pohjoiseen ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "XMqX1lWEYeoaps60GoWQfdVTpOj6MDfi",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "TkkMAa4_5uFcGKSXi2hvqjCH5tmAPWcj",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "ABizLqJ9_EH9whWPTpkaqEc5ZytqbE3k",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "OrlkRvITBlCzjgSstNkegmBSRXXSii7q",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "VFP-Yp-wEbHRgWWhpsr-Bc6EJ_cklIkC",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "nfOJkugIsMub-UbQiMfLZ7o81UGJEkAi",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "X6qR_ajUJHJg7k5t0ithtTHKJToNf86k",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "CEs1efNV7BSYqLI0-BgvZmuaLaIVY-Ef",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "k2QblyEkoX1t335QtrwP1q_o_wbCePH6",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "dH6HVziBZbbKwK8dLOcv-_YX_DDjlaCm",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "upoQ4qFREbmC3oa9I41pY9ltx-ZzFkBf",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne etelään ➞ measurement_offline ➞ measurement_offline"
+      },
+      {
+        "id": "_ra0-iLJC8sSkD9uCMLq1DM6n2o5yt69",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ longitude ➞ longitude"
+      },
+      {
+        "id": "Sh-X8fcu8rwG2gPxZ5cfZgRKKwbMB26v",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ car_count ➞ car_count"
+      },
+      {
+        "id": "iVuVenlU0IoBY5YbmQfp4YdRDP14GkV4",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ bus_count ➞ bus_count"
+      },
+      {
+        "id": "eLjfr7iXEN1hCe80hfJEVXdYNpH3WSK4",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ motorcycle_count ➞ motorcycle_count"
+      },
+      {
+        "id": "UNvu1r9Q6jB_t2oZ8NDcwQjUmy9GOXaG",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ latitude ➞ latitude"
+      },
+      {
+        "id": "uRADeRpaBX9JrDD33pN6iJkerTAPR54F",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ tram_count ➞ tram_count"
+      },
+      {
+        "id": "BEo2uTkVzPuQeTNrVjkzFGdUoPRsk9AX",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ escooter_count ➞ escooter_count"
+      },
+      {
+        "id": "ma9RvUSRzVTZQhwLRiFZeO6Ip_Snx2Qw",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ bicycle_count ➞ bicycle_count"
+      },
+      {
+        "id": "Pdm2yzRLllZDroTJ7bPXY5_aGfIFsZzL",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ pedestrian_count ➞ pedestrian_count"
+      },
+      {
+        "id": "1RnqQa2KOjUCzWw-EpsBUVI4tYJWJqy5",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ truck_count ➞ truck_count"
+      },
+      {
+        "id": "ldChqh4qdZlsnZqYkC95R_oq9G2gTLjO",
+        "name": "Päätaso ➞ Liikenteenlaskennan tilannekuvasovellus ➞ Alue: Insinöörinkatu ➞ Hervantakeskus ➞ Kohde: Insinöörinkatu länsi - Pyöräliikenne ➞ Insinöörinkatu länsi - Pyöräliikenne pohjoiseen ➞ measurement_offline ➞ measurement_offline"
+      }
+    ]
+  }
+]

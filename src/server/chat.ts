@@ -3,19 +3,20 @@ import OpenAI from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import { getStat } from "./iot-api";
 
+import products from "../products.json";
+
 const openai = new OpenAI();
 
-const getCarCount = async (
+const getCount = async (
+  attributeId: string,
   startTime: string,
   endTime: string,
   dimension: "Minute" | "Hour" | "Day" | "Week" | "Quarter" | "Month" | "Year"
 ) => {
-  console.log(startTime, endTime);
-
   const data = await getStat({
     orderNumber: process.env.IOT_ORDER_NUMBER || "",
     productId: "J3ukJZfI6gRCriN0tkARlQcE2QhKMrGm",
-    id: ["8FM6TrnXFkPs9TPn5dqL3ouR6vjEIT2Z"],
+    id: [attributeId],
     period: "Custom",
     dimension: dimension,
     startTime: new Date(startTime),
@@ -34,13 +35,21 @@ export const runConversation = async (
 
   const completion = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
-    messages: startMessages,
+    messages: [
+      {
+        role: "system",
+        content: `You are a helpful assistant. Time is ${new Date().toISOString()}\n\nAvailable attributes: \n${products[0].attributes
+          .map((p) => `${p.id}: ${p.name}`)
+          .join("\n")}`,
+      },
+      ...startMessages,
+    ],
     tools: [
       {
         type: "function",
         function: {
-          name: "get_car_count",
-          description: "Get car count at Insinöörinkatu",
+          name: "get_count",
+          description: "Get count of attribute at Insinöörinkatu",
           parameters: {
             type: "object",
             properties: {
@@ -57,6 +66,10 @@ export const runConversation = async (
                 description:
                   "Can be one of Minute, Hour, Day, Week, Quarter, Month, Year. For example Hour will get hourly values for the period",
               },
+              attributeId: {
+                type: "string",
+                description: "The attribute ID to get the count for",
+              },
             },
             required: ["startTime", "endTime"],
           },
@@ -71,7 +84,7 @@ export const runConversation = async (
   const toolCalls = responseMessage.tool_calls;
   if (toolCalls) {
     const availableFunctions = {
-      get_car_count: getCarCount,
+      get_count: getCount,
     } as const;
 
     for (const toolCall of toolCalls) {
@@ -80,6 +93,7 @@ export const runConversation = async (
       const functionToCall = availableFunctions[functionName];
       const functionArgs = JSON.parse(toolCall.function.arguments);
       const functionResponse = await functionToCall(
+        functionArgs.attributeId,
         functionArgs.startTime,
         functionArgs.endTime,
         functionArgs.dimension
