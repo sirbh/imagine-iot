@@ -5,7 +5,11 @@ import { getStat } from "./iot-api";
 
 const openai = new OpenAI();
 
-const getHourlyCarCount = async (startTime: string, endTime: string) => {
+const getCarCount = async (
+  startTime: string,
+  endTime: string,
+  dimension: "Minute" | "Hour" | "Day" | "Week" | "Quarter" | "Month" | "Year"
+) => {
   console.log(startTime, endTime);
 
   const data = await getStat({
@@ -13,7 +17,7 @@ const getHourlyCarCount = async (startTime: string, endTime: string) => {
     productId: "J3ukJZfI6gRCriN0tkARlQcE2QhKMrGm",
     id: ["8FM6TrnXFkPs9TPn5dqL3ouR6vjEIT2Z"],
     period: "Custom",
-    dimension: "Hour",
+    dimension: dimension,
     startTime: new Date(startTime),
     endTime: new Date(endTime),
   });
@@ -35,8 +39,8 @@ export const runConversation = async (
       {
         type: "function",
         function: {
-          name: "get_hourly_car_count",
-          description: "Get the hourly car count at Insinöörinkatu",
+          name: "get_car_count",
+          description: "Get car count at Insinöörinkatu",
           parameters: {
             type: "object",
             properties: {
@@ -47,6 +51,11 @@ export const runConversation = async (
               endTime: {
                 type: "string",
                 description: "The end time of the period",
+              },
+              dimension: {
+                type: "string",
+                description:
+                  "Can be one of Minute, Hour, Day, Week, Quarter, Month, Year. For example Hour will get hourly values for the period",
               },
             },
             required: ["startTime", "endTime"],
@@ -62,7 +71,7 @@ export const runConversation = async (
   const toolCalls = responseMessage.tool_calls;
   if (toolCalls) {
     const availableFunctions = {
-      get_hourly_car_count: getHourlyCarCount,
+      get_car_count: getCarCount,
     } as const;
 
     for (const toolCall of toolCalls) {
@@ -72,7 +81,8 @@ export const runConversation = async (
       const functionArgs = JSON.parse(toolCall.function.arguments);
       const functionResponse = await functionToCall(
         functionArgs.startTime,
-        functionArgs.endTime
+        functionArgs.endTime,
+        functionArgs.dimension
       );
 
       newMessages.push({
